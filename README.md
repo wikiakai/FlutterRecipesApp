@@ -4,7 +4,7 @@
 
 ## Description
 
-This is mobile app made with Flutter framework, using 2 API's endpoint to GET data and 1 endpoint to data. 
+This is mobile app made with Flutter framework, using 2 API's endpoint to GET data and 1 endpoint POST to data. 
 
 ## How to Run
 
