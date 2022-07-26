@@ -33,8 +33,6 @@ class ResultView extends ViewModelBuilderWidget<ResultViewModel> {
                             ...recipesResult
                                 .map(
                                   (recipe) => Container(
-                                    // width: 1000,
-                                    // height: 200,
                                     child: Card(
                                       child: Padding(
                                         padding: const EdgeInsets.all(8),
@@ -51,7 +49,8 @@ class ResultView extends ViewModelBuilderWidget<ResultViewModel> {
                                               '${recipe.title}',
                                               style: headline2,
                                             ),
-                                            Text(recipe.ingredients.toString()),
+                                            Text(
+                                                'Bahan: ${recipe.ingredients!.toList()}'),
                                           ],
                                         ),
                                       ),

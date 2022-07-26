@@ -38,6 +38,12 @@ dependencies:
   dio: ^4.0.6
   google_fonts: ^3.0.1
   carousel_slider: ^4.1.1
+  flutter_launcher_icons: "^0.9.2"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/app_icon.png"
 
 dev_dependencies:
   flutter_test:
@@ -60,10 +66,10 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/app_icon.png
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

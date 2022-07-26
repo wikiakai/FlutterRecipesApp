@@ -13,4 +13,6 @@ class ResultViewModel extends BaseViewModel {
   List<RecipesModel> filteredIngredients = [];
 
   List<RecipesModel> recipesResult = [];
+
+  // var filteredResult = recipesResult.toSet().toList();
 }

@@ -23,7 +23,10 @@ class HomeView extends ViewModelBuilderWidget<HomeViewModel> {
   @override
   Widget builder(BuildContext context, HomeViewModel viewModel, Widget? child) {
     return Scaffold(
-      appBar: AppBar(title: const Text('FlutterTuts Exam')),
+      appBar: AppBar(
+        title: const Text('FlutterTuts Exam'),
+        leading: Image.asset('assets/app_icon.png'),
+      ),
       body: SingleChildScrollView(
         // controller: controller,
         child: Wrap(

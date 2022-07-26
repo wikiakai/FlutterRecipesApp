@@ -41,7 +41,7 @@ class SearchView extends ViewModelBuilderWidget<SearchViewModel> {
           ),
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(primary: Colors.red),
-            onPressed: () {},
+            onPressed: viewModel.deleteFilter,
             icon: const Icon(Icons.clear),
             label: const Text('Clear'),
           ),

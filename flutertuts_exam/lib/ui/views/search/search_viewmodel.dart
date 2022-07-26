@@ -44,8 +44,8 @@ class SearchViewModel extends BaseViewModel {
     notifyListeners();
   }
 
-  deleteFilter(IngredientsModel ingredient) {
-    ingredient.isChecked = false;
+  deleteFilter() {
+    allIngredients[1] = false as IngredientsModel;
   }
 
   // List<RecipesModel> recipesList = [];
@@ -55,9 +55,6 @@ class SearchViewModel extends BaseViewModel {
 
   Future filterIngredients() async {
     isLoading = false;
-    // notifyListeners();
-
-    // recipesResult = await ApiServices().postIngredients();
 
     filteredIngredients =
         allIngredients.where((element) => element.isChecked == true).toList();
@@ -73,10 +70,13 @@ class SearchViewModel extends BaseViewModel {
       if (response.statusCode == 200) {
         var result = response.data['data'] as List;
 
+        print(result);
+
+        recipesResult.clear();
         recipesResult.addAll(List<RecipesModel>.from(
             result.map((e) => RecipesModel.fromJson(e))));
 
-        print(recipesResult[0].ingredients);
+        // print(recipesResult[0].ingredients);
 
         return recipesResult;
       } else {
