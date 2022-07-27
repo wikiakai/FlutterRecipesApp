@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:flutertuts_exam/API/api.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-import '../../../constants/carousel_source.dart';
 import '../../../constants/style.dart';
 import '../../../shared/widgets/carousel_slider.dart';
 import '../search/search_view.dart';

@@ -50,7 +50,7 @@ class ResultView extends ViewModelBuilderWidget<ResultViewModel> {
                                               style: headline2,
                                             ),
                                             Text(
-                                                'Bahan: ${recipe.ingredients!.toList()}'),
+                                                'Bahan: ${recipe.ingredients}'),
                                           ],
                                         ),
                                       ),

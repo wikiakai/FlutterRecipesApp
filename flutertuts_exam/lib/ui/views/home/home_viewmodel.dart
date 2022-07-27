@@ -22,7 +22,10 @@ class HomeViewModel extends BaseViewModel {
 
       return allSpices;
     } catch (e) {
-      print(e);
+      print(e.toString());
     }
   }
+
+  bool iconPress = false;
+  iconPressed() {}
 }

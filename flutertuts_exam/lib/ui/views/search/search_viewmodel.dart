@@ -44,11 +44,6 @@ class SearchViewModel extends BaseViewModel {
     notifyListeners();
   }
 
-  deleteFilter() {
-    allIngredients[1] = false as IngredientsModel;
-  }
-
-  // List<RecipesModel> recipesList = [];
   final List<RecipesModel> recipesResult = [];
 
   List<IngredientsModel> filteredIngredients = [];
@@ -76,8 +71,6 @@ class SearchViewModel extends BaseViewModel {
         recipesResult.addAll(List<RecipesModel>.from(
             result.map((e) => RecipesModel.fromJson(e))));
 
-        // print(recipesResult[0].ingredients);
-
         return recipesResult;
       } else {
         return [];
@@ -86,10 +79,5 @@ class SearchViewModel extends BaseViewModel {
       print(e.toString());
       return [];
     }
-
-    // isLoading = false;
-    // notifyListeners();
-
-    // return recipesResult;
   }
 }
