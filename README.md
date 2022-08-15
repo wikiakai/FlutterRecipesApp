@@ -1,27 +1,16 @@
-# Malakhi-Dwiki-FlutterTuts-Exam
+# flutertuts_exam
 
+A new Flutter project.
 
+## Getting Started
 
-## Description
+This project is a starting point for a Flutter application.
 
-This is mobile app made with Flutter framework, using 2 API's endpoint to GET data and 1 endpoint POST to data. 
+A few resources to get you started if this is your first Flutter project:
 
-## How to Run
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-Clone this repository
-
-```
-git@gitlab.com:wikiakai/Malakhi-Dwiki-FlutterTuts-Exam.git
-```
-
-## Go to path directory
-
-```
-cd Malakhi-Dwiki-FlutterTuts-Exam
-```
-
-## RUN THE APP
-
-```
-flutter run lib/main.dart
-```
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

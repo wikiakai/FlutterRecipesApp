@@ -29,6 +29,7 @@ class SearchView extends ViewModelBuilderWidget<SearchViewModel> {
           ElevatedButton.icon(
             onPressed: () async {
               await viewModel.filterIngredients();
+              // ignore: use_build_context_synchronously
               Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -73,7 +74,6 @@ class SearchView extends ViewModelBuilderWidget<SearchViewModel> {
                                                       .emoji_food_beverage),
                                                   value: ingredient.isChecked,
                                                   onChanged: (value) =>
-                                                      // ingredient.isChecked = !value!,
                                                       viewModel.onCheckBox(
                                                           ingredient, value!),
                                                   title: Text(ingredient.name),

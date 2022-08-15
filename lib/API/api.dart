@@ -36,6 +36,7 @@ class ApiServices {
       var data = response.data['data'] as List;
 
       allIngredients.addAll(data.map((e) => IngredientsModel(name: e)));
+
       return allIngredients;
     } catch (e) {
       print(e);
